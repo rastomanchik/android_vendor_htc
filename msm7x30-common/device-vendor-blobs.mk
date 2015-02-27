@@ -1,20 +1,16 @@
-# Copyright (C) 2010 The Android Open Source Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-    vendor/htc/msm7x30-common/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so
+    vendor/htc/msm7x30-common/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libqc-opt.so:obj/lib/libqc-opt.so
+
+# Prebuilt libraries from CodeAurora
+PRODUCT_COPY_FILES += \
+    vendor/htc/msm7x30-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
 
 # Adreno
 PRODUCT_COPY_FILES += \
@@ -26,10 +22,12 @@ PRODUCT_COPY_FILES += \
     vendor/htc/msm7x30-common/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/htc/msm7x30-common/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     vendor/htc/msm7x30-common/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-    vendor/htc/msm7x30-common/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+    vendor/htc/msm7x30-common/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
     vendor/htc/msm7x30-common/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-    vendor/htc/msm7x30-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so
-
+    vendor/htc/msm7x30-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libllvm-arm.so:/system/lib/libllvm-arm.so \
+    vendor/htc/msm7x30-common/proprietary/lib/libOpenCL.so:/system/lib/libOpenCL.so \
+    
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/htc/msm7x30-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
@@ -56,6 +54,9 @@ PRODUCT_COPY_FILES += \
 
 # Firmware
 PRODUCT_COPY_FILES += \
+    vendor/htc/msm7x30-common/proprietary/etc/firmware/a225_pfp.fw:/system/etc/firmware/a225_pfp.fw \
+    vendor/htc/msm7x30-common/proprietary/etc/firmware/a225_pm4.fw:/system/etc/firmware/a225_pm4.fw \
+    vendor/htc/msm7x30-common/proprietary/etc/firmware/a225p5_pm4.fw:/system/etc/firmware/a225p5_pm4.fw \
     vendor/htc/msm7x30-common/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/htc/msm7x30-common/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     vendor/htc/msm7x30-common/proprietary/etc/firmware/vidc_720p_command_control.fw:system/etc/firmware/vidc_720p_command_control.fw \
