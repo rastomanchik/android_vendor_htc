@@ -4,6 +4,9 @@ PRODUCT_COPY_FILES += \
 	vendor/htc/primou/proprietary/bin/lsc_camera:system/bin/lsc_camera \
 	vendor/htc/primou/proprietary/lib/libchromatix_s5k4e5yx_default_video.so:system/lib/libchromatix_s5k4e5yx_default_video.so \
 	vendor/htc/primou/proprietary/lib/libchromatix_s5k4e5yx_preview.so:system/lib/libchromatix_s5k4e5yx_preview.so \
+    vendor/htc/primou/proprietary/lib/libchromatix_s5k4e5yx_hdr.so:system/lib/libchromatix_s5k4e5yx_hdr.so \
+    vendor/htc/primou/proprietary/lib/libchromatix_s5k4e5yx_hfr.so:system/lib/libchromatix_s5k4e5yx_hfr.so \
+    vendor/htc/primou/proprietary/lib/libchromatix_s5k4e5yx_hfr_4x.so:system/lib/libchromatix_s5k4e5yx_hfr_4x.so \
 	vendor/htc/primou/proprietary/lib/libmmcamera_rawchipproc.so:system/lib/libmmcamera_rawchipproc.so \
 
 # Ril
@@ -24,6 +27,7 @@ PRODUCT_COPY_FILES += \
 	vendor/htc/primou/proprietary/bin/logcat2:system/bin/logcat2 \
 	vendor/htc/primou/proprietary/bin/rmt_storage:system/bin/rmt_storage \
 	vendor/htc/primou/proprietary/bin/zcb:system/bin/zcb \
+	vendor/htc/primou/proprietary/bin/snd3254:system/bin/snd3254 \
 	vendor/htc/primou/proprietary/bin/hostapd:system/bin/hostapd
 
 PRODUCT_COPY_FILES += \
